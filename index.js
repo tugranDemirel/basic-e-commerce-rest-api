@@ -20,7 +20,7 @@ app.use(express.json())
 // usage of userRoute
 app.use('/api/users', userRoute);
 app.use('/api/auth', authRoute);
-app.use('/api/product', productRoute);
+app.use('/api/products', productRoute);
 
 app.listen(process.env.PORT || 5000, () => {
     console.log('backend server is running ')
