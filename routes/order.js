@@ -14,7 +14,7 @@ router.post("/", verifyToken, async (req, res) => {
     }
 })
 
-UPDATE
+//UPDATE
 router.put("/:id", verifyTokenAndAdmin, async (req, res) => {
 
     try{
@@ -48,7 +48,7 @@ router.get("/find/:userId", verifyTokenAndAuthorization, async (req, res) => {
 })
 
 //GET ALL
-route.get('/', verifyTokenAndAdmin, async (req, res) => {
+router.get('/', verifyTokenAndAdmin, async (req, res) => {
 
     try{
         const orders = await Order.find()
